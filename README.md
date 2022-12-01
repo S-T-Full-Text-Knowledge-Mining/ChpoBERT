@@ -10,11 +10,59 @@
 
 目前，迫切需要一种专门用于汉语政策全文本自动处理的预训练语言模型。
 
-我们使用国内各个省市政策发布平台上的政策全文本作为训练集，以BERT-base-chinese、Chinese-RoBERTa-wwm-ext两个中文预训练模型为基线，基于MLM和WWM任务构建了ChpoBERT-mlm，ChpoRoBERTa-mlm，ChpoBERT-wwm和ChpoRoBERTa-wwm汉语政策预训练模型。
+我们使用国内各个省市政策发布平台上的政策全文本作为训练集，以BERT-base-chinese、Chinese-RoBERTa-wwm-ext两个中文预训练模型为基线，基于MLM和WWM任务构建了ChpoBERT-mlm，ChpoBERT-wwm，ChpoRoBERTa-mlm和ChpoRoBERTa-wwm汉语政策预训练模型。
 
 我们设计了一个政策文本命名实体识别任务，并增加ERNIE模型进行对比，以验证预训练模型的性能。
 
 
+
+## 使用方法
+
+### Huggingface Transformers
+
+基于Huggingface Transformers的from_pretraining方法可以在线直接获取ChpoBERT-mlm，ChpoBERT-wwm，ChpoRoBERTa-mlm和ChpoRoBERTa-wwm模型。
+
+- ChpoBERT-mlm
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("KM4STfulltext/ChpoBERT-mlm")
+
+model = AutoModel.from_pretrained("KM4STfulltext/ChpoBERT-mlm")
+```
+
+- ChpoBERT-wwm
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("KM4STfulltext/ChpoBERT-wwm")
+
+model = AutoModel.from_pretrained("KM4STfulltext/ChpoBERT-wwm")
+```
+
+- ChpoRoBERTa-mlm
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("KM4STfulltext/ChpoRoBERTa-mlm")
+
+model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-mlm")
+```
+
+- ChpoRoBERTa-wwm
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
+
+model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
+```
+
+### 
 
 ## 数据集
 
@@ -41,6 +89,20 @@
 我们所提供的是PyTorch版的模型。
 
 
+
+## 下载途径
+
+- 从Huggingface官网下载。
+
+- [ChpoBERT-mlm]: https://huggingface.co/KM4STfulltext/ChpoBERT-mlm
+
+- [ChpoBERT-wwm]: https://huggingface.co/KM4STfulltext/ChpoBERT-wwm
+
+- [ChpoRoBERTa-mlm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-ml
+
+- [ChpoRoBERTa-wwm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-wwm
+
+  
 
 ## 验证结果
 
@@ -69,6 +131,4 @@
 | weighted-avg | P    | 75.40             | 74.92                   | 72.49  | 74.02        | 75.76           | 75.23        | 75.14           |   563   |
 |              | R    | 86.68             | 89.16                   | 88.99  | 88.10        | 87.74           | 90.23        | 86.14           |         |
 |              | F1   | 79.78             | 80.38                   | 78.76  | 79.56        | 80.44           | 81.12        | 79.54           |         |
-
- 
 
