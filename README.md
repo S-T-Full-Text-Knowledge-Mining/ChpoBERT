@@ -62,7 +62,7 @@ tokenizer = AutoTokenizer.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 ```
 
-### 
+
 
 ## 数据集
 
@@ -94,15 +94,14 @@ model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 
 - 从Huggingface官网下载。
 
-- [ChpoBERT-mlm]: https://huggingface.co/KM4STfulltext/ChpoBERT-mlm	"ChpoBERT-mlm"
+- [ChpoBERT-mlm](https://huggingface.co/KM4STfulltext/ChpoBERT-mlm)
 
-- [ChpoBERT-wwm]: https://huggingface.co/KM4STfulltext/ChpoBERT-wwm	"ChpoBERT-wwm"
+- [ChpoBERT-wwm](https://huggingface.co/KM4STfulltext/ChpoBERT-wwm)
 
-- [ChpoRoBERTa-mlm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-ml	"ChpoRoBERTa-mlm"
+- [ChpoRoBERTa-mlm](https://huggingface.co/KM4STfulltext/ChpoRoBERTa-mlm)
+- [ChpoRoBERTa-wwm](https://huggingface.co/KM4STfulltext/ChpoRoBERTa-wwm)
 
-- [ChpoRoBERTa-wwm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-wwm	"ChpoRoBERTa-wwm"
 
-  
 
 ## 验证结果
 
