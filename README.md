@@ -20,7 +20,7 @@
 
 ### Huggingface Transformers
 
-基于Huggingface Transformers的from_pretraining方法可以在线直接获取ChpoBERT-mlm，ChpoBERT-wwm，ChpoRoBERTa-mlm和ChpoRoBERTa-wwm模型。
+基于Huggingface Transformers的from_pretrained方法可以直接在线获取ChpoBERT-mlm，ChpoBERT-wwm，ChpoRoBERTa-mlm和ChpoRoBERTa-wwm模型。
 
 - ChpoBERT-mlm
 
@@ -86,7 +86,7 @@ model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 
 ## 模型下载
 
-我们所提供的是PyTorch版的模型。
+我们提供的是PyTorch版的模型。
 
 
 
