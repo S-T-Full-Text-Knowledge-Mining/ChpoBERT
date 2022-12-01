@@ -94,13 +94,13 @@ model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 
 - 从Huggingface官网下载。
 
-- [ChpoBERT-mlm]: https://huggingface.co/KM4STfulltext/ChpoBERT-mlm
+- [ChpoBERT-mlm]: https://huggingface.co/KM4STfulltext/ChpoBERT-mlm	"ChpoBERT-mlm"
 
-- [ChpoBERT-wwm]: https://huggingface.co/KM4STfulltext/ChpoBERT-wwm
+- [ChpoBERT-wwm]: https://huggingface.co/KM4STfulltext/ChpoBERT-wwm	"ChpoBERT-wwm"
 
-- [ChpoRoBERTa-mlm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-ml
+- [ChpoRoBERTa-mlm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-ml	"ChpoRoBERTa-mlm"
 
-- [ChpoRoBERTa-wwm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-wwm
+- [ChpoRoBERTa-wwm]: https://huggingface.co/KM4STfulltext/ChpoRoBERTa-wwm	"ChpoRoBERTa-wwm"
 
   
 
