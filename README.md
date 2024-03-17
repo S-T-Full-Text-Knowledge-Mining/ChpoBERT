@@ -134,7 +134,13 @@ $$
 
 宏平均为所有类别的指标值的算数平均值，即宏精确率、宏召回率和宏*F1*值，具体计算公式如下。
 
-#![fm.png](fm.png)
+![fm.png](fm.png)
+
+<div style="text-align:center">
+    <img src="fm.png">
+</div>
+
+
 
 
 
