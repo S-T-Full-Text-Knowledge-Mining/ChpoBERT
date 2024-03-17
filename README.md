@@ -120,9 +120,11 @@ $$
 precison=\frac {TP} {TP+FP}
 $$
 
+
 $$
 recall=\frac {TP} {TP+FN}
 $$
+
 
 $$
 F1-score=\frac {2precision\cdot recall} {precision+recall}
@@ -137,9 +139,11 @@ $$
 {precision}_{macro}=\frac {1} {n}\sum ^{n}_{i=1} {{precision}_{i}}
 $$
 
+
 $$
 {recall}_{macro}=\frac {1} {n}\sum ^{n}_{i=1} {{recall}_{i}}
 $$
+
 
 $$
 {F1-score}_{macro}=\frac {2\cdot {precision}_{macro}\cdot {recall}_{macro}} {{precision}_{macro}\cdot {recall}_{macro}}
@@ -148,8 +152,6 @@ $$
 
 
 加权平均将样本数量占样本总数比例作为计算平均值的权重，指标为加权精确率、加权召回率和加权F1值，具体计算公式如下。
-
-
 $$
 {precision}_{weighted}=\frac {1} {n}\sum ^{n}_{i=1} {{precision}_{i}}\cdot {f}_{i}
 $$
@@ -161,7 +163,6 @@ $$
 $$
 {F1-score}_{weighted}=\frac {2\cdot {precision}_{weighted}\cdot {recall}_{weighted}} {{precision}_{weighted}\cdot {recall}_{weighted}}
 $$
-
 
 
 ## 模型下载
