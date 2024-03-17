@@ -137,8 +137,13 @@ $$
 ![fm.png](fm.png)
 
 <div style="text-align:center">
-    <img src="fm.png">
+    <img src="fm.png" style="display: block; margin: auto;">
 </div>
+
+<center>
+    <img src="fm.png">
+</center>
+
 
 
 
