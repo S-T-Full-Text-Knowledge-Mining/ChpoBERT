@@ -115,30 +115,37 @@ model = AutoModel.from_pretrained("KM4STfulltext/ChpoRoBERTa-wwm")
 
 本研究的预训练模型验证将结合混淆矩阵，对于词汇的分词、词性的标注和实体的识别性能使用精确率*P*（Precision）、召回率*R*（Recall）、*F1*值（F1-score）指标进行评价。对于总体分词、标注和识别性能，使用宏平均（macro-avg）和加权平均（weighted-avg）中的*P、R、F1*指标进行评价，具体计算公式如下。
 
-
-$$
-precison=\frac {TP} {TP+FP}
-$$
-
-
-$$
-recall=\frac {TP} {TP+FN}
-$$
+<center>
+    <img src="p.png">
+</center>
 
 
-$$
-F1-score=\frac {2precision\cdot recall} {precision+recall}
-$$
+
+<center>
+    <img src="r.png">
+</center>
+
+
+
+<center>
+    <img src="f.png">
+</center>
 
 
 
 宏平均为所有类别的指标值的算数平均值，即宏精确率、宏召回率和宏*F1*值，具体计算公式如下。
 
-![fm.png](fm.png)
+<center>
+    <img src="pm.png">
+</center>
 
-<div style="text-align:center">
-    <img src="fm.png" style="display: block; margin: auto;">
-</div>
+
+
+<center>
+    <img src="rm.png">
+</center>
+
+
 
 <center>
     <img src="fm.png">
@@ -146,37 +153,25 @@ $$
 
 
 
-
-
-
-$$
-{precision}_{macro}=\frac {1} {n}\sum ^{n}_{i=1} {{precision}_{i}}
-$$
-
-
-$$
-{recall}_{macro}=\frac {1} {n}\sum ^{n}_{i=1} {{recall}_{i}}
-$$
-
-
-$$
-{F1-score}_{macro}=\frac {2\cdot {precision}_{macro}\cdot {recall}_{macro}} {{precision}_{macro}\cdot {recall}_{macro}}
-$$
-
-
-
 加权平均将样本数量占样本总数比例作为计算平均值的权重，指标为加权精确率、加权召回率和加权F1值，具体计算公式如下。
-$$
-{precision}_{weighted}=\frac {1} {n}\sum ^{n}_{i=1} {{precision}_{i}}\cdot {f}_{i}
-$$
 
-$$
-{recall}_{weighted}=\frac {1} {n}\sum ^{n}_{i=1} {{recall}_{i}}\cdot {f}_{i}
-$$
+<center>
+    <img src="pw.png">
+</center>
 
-$$
-{F1-score}_{weighted}=\frac {2\cdot {precision}_{weighted}\cdot {recall}_{weighted}} {{precision}_{weighted}\cdot {recall}_{weighted}}
-$$
+
+
+<center>
+    <img src="rw.png">
+</center>
+
+
+
+<center>
+    <img src="fw.png">
+</center>
+
+
 
 
 ## 模型下载
